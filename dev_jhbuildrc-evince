@@ -18,7 +18,7 @@
 moduleset = 'https://raw.github.com/m4heshd/jhbuild_dev/master/dev_evince.modules'
 
 # A list of the modules to build.
-modules = [ 'evince', 'gnome-themes-standard', 'dconf', 'gvfs' ]
+modules = [ 'dev_repo', 'gnome-themes-standard', 'dconf', 'gvfs' ]
 
 # what directory should the source be checked out to?
 checkoutroot = os.path.join(os.environ['HOME'], 'jhbuild', 'evince', 'checkout')
@@ -46,7 +46,7 @@ os.environ['LINGUAS'] = ''
 # skip = [ 'cairo' ]
 
 ## Module options
-module_autogenargs['evince'] = autogenargs + ' --disable-nautilus ' + \
+module_autogenargs['dev_repo'] = autogenargs + ' --disable-nautilus ' + \
                                '--without-keyring --enable-debug '
 module_autogenargs['gnome-themes-standard'] = autogenargs + \
                                ' --disable-gtk2-engine '
