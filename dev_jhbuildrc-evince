@@ -15,7 +15,7 @@
 # what module set should be used.
 # but it can be any of the files in the modulesets directory, or even
 # the URL of a module set file on a web server.
-moduleset = 'https://raw.github.com/m4heshd/jhbuild/master/dev_evince.modules'
+moduleset = 'https://raw.github.com/m4heshd/jhbuild_dev/master/dev_evince.modules'
 
 # A list of the modules to build.
 modules = [ 'evince', 'gnome-themes-standard', 'dconf', 'gvfs' ]
