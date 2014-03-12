@@ -1,0 +1,32 @@
+<?xml version="1.0"?><!--*- mode: nxml; indent-tabs-mode: nil -*-->
+<!DOCTYPE moduleset SYSTEM "moduleset.dtd">
+<?xml-stylesheet type="text/xsl" href="moduleset.xsl"?>
+<!-- vim:set ts=2 expandtab: -->
+<moduleset>
+
+<!-- git repos -->
+  <repository type="git" name="git.gnome.org" default="yes"
+      href="git://git.gnome.org/"/>
+  <repository type="git" name="poppler.freedesktop.org"
+      href="git://anongit.freedesktop.org/poppler/"/>
+  <repository type="git" name="git.freedesktop.org"
+    href="git://anongit.freedesktop.org/"/>
+  <repository type="git" name="github.com"
+    href="git://github.com/m4heshd/"/>
+
+
+
+<!-- packages -->
+  <autotools id="dev_repo" autogenargs="--enable-introspection"
+                         supports-parallel-builds="no">
+    <branch repo="github.com"/>
+    <dependencies>
+      <dep package="gtk+"/>
+      <dep package="poppler"/>
+      <dep package="libsecret"/>
+      <dep package="gnome-icon-theme-symbolic"/>
+    </dependencies>
+
+
+
+</moduleset>
