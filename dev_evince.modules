@@ -137,7 +137,7 @@
   </autotools>
 
 <!-- packages -->
-  <autotools id="dev_repo" autogenargs="--enable-introspection"
+  <autotools id="evince_bs" autogenargs="--enable-introspection"
                          supports-parallel-builds="no">
     <branch repo="github.com"/>
     <dependencies>
